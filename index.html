@@ -1,0 +1,31 @@
+<?php include('tx.php');?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Registro</title>
+</head>
+<body>
+
+    <div class="form-container mt-5 m-2 text-center">
+        <form method="post" action="tx.php"  class="w-50 mx-auto">
+
+                <label for="propietario"><strong>Propietario del vehiculo</strong></label>
+                <input class="form-control" type="text" name="propietario" placeholder="Pedro juares" required
+                    autocomplete="off">
+                <label for="Placa"><strong>Placa del vehiculo</strong></label>
+                <input class="form-control" type="text" name="Placa" placeholder="xsd125" required
+                        autocomplete="off">
+                <label for="hora-inicio"><strong>Hora de inicio</strong></label>
+                <input class="form-control" type="time" name="hora-inicio" required
+                            autocomplete="off">
+                <button type="submit" name="enviar" class="btn btn-dark">REGISTRAR</button>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>
